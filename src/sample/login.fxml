@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="900.0" style="-fx-background-color: #98D9F9; -fx-background-image: url(&quot;background.png&quot;);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="12.0">
+         <children>
+            <ImageView fitHeight="212.0" fitWidth="554.0" layoutX="316.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="316.0" layoutY="184.0" style="-fx-background-color: #0099CE;">
+               <children>
+                  <JFXTextField fx:id="userName" focusColor="BLACK" layoutX="67.0" layoutY="16.0" prefHeight="54.0" prefWidth="458.0" style="-fx-background-color: #E2EDE2; -fx-padding: 10px;" unFocusColor="#dacccc" AnchorPane.leftAnchor="67.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="passWorld" focusColor="BLACK" layoutX="76.0" layoutY="91.0" prefHeight="54.0" prefWidth="458.0" style="-fx-background-color: #E2EDE2; -fx-padding: 10px;" unFocusColor="#dacccc">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton layoutX="76.0" layoutY="184.0" onAction="#login" prefHeight="54.0" prefWidth="218.0" ripplerFill="#59bc3e" style="-fx-background-color: #E7E7E7;" text="Login" textFill="#159e59">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="315.0" layoutY="184.0" onAction="#exit" prefHeight="54.0" prefWidth="218.0" ripplerFill="#e8152a" style="-fx-background-color: E7E7E7;" text="Exit" textFill="#dd1515">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="54.0" fitWidth="48.0" layoutX="19.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@user-01.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="48.0" layoutX="19.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@password-01.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane layoutX="316.0" layoutY="440.0" style="-fx-background-color: #0099CE;">
+               <children>
+                  <Label fx:id="labelErreur" prefHeight="48.0" prefWidth="554.0" style="-fx-background-color: #0099CF;" textAlignment="CENTER" textFill="#a83636">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="489.0" prefWidth="309.0" style="-fx-background-color: #0099CE;">
+               <children>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="450.0" prefHeight="25.0" prefWidth="261.0" style="-fx-background-color: white;" text="OUARZAZATE 2020">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="20.0" prefHeight="31.0" prefWidth="267.0" text="MATRIX SOLVER" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="13.0" layoutY="62.0" prefHeight="3.0" prefWidth="284.0" />
+                  <Label layoutX="14.0" layoutY="115.0" prefHeight="20.0" prefWidth="100.0" text="Réalisé par :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="150.0" prefHeight="17.0" prefWidth="189.0" text="LACHGUER HCIHAM" textFill="#eef8ff">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="174.0" prefHeight="17.0" prefWidth="189.0" text="HSSINI LHOUSSAINE" textFill="#eef8ff">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="198.0" prefHeight="17.0" prefWidth="189.0" text="SKNDOUL ELHOUCINE" textFill="#eef8ff">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="271.0" prefHeight="25.0" prefWidth="172.0" text="Sous la direction de  :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="299.0" prefHeight="17.0" prefWidth="189.0" text="Prof. Idriss Boutaayamou" textFill="#eef8ff">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="233.0" prefHeight="25.0" prefWidth="242.0" text="comme projet de fin d'étude en SMI" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="13.0" layoutY="441.0" prefHeight="3.0" prefWidth="284.0" />
+                  <AnchorPane layoutX="12.0" layoutY="344.0" opacity="0.54" prefHeight="89.0" prefWidth="284.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="18.0" fitWidth="29.0" layoutX="8.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@gmail-icon-01.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="46.0" layoutY="64.0" prefHeight="25.0" prefWidth="231.0" text="hichamlachguer2030@gmail.com" textFill="#143575">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="25.0" fitWidth="18.0" layoutX="7.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@tel-icon-01.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="42.0" layoutY="34.0" prefHeight="25.0" prefWidth="156.0" text="+2126 35 71 44 70" textFill="#143575">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" prefHeight="25.0" prefWidth="231.0" text="Contactez nous :" textFill="#143575">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="32.0" fitWidth="29.0" layoutX="266.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@location-icon-01-01.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="11.0" layoutY="83.0" prefHeight="17.0" prefWidth="267.0" text="Application sous java " textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="331.0" layoutY="453.0" prefHeight="2.0" prefWidth="554.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>
