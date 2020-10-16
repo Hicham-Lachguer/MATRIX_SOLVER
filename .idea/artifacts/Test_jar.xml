@@ -2,7 +2,7 @@
   <artifact type="jar" build-on-make="true" name="Test:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/Test_jar</output-path>
     <root id="archive" name="Test.jar">
-      <element id="module-output" name="Test" />
+      <element id="module-output" name="MATRIX_SOLVER BY FPO" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../resource/bcel-6.5.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../resource/commons-math3-3.6.1-tests.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../resource/commons-math3-3.6.1-tools.jar" path-in-jar="/" />
